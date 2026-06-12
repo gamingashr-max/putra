@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday My Love ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--bg:#18020d;
+--card:rgba(255,255,255,.08);
+--pink:#ffb4d8;
+--gold:#ffe0a8;
+--white:#ffffff;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:linear-gradient(to bottom,#14010a,#220210,#320517);
+color:white;
+overflow-x:hidden;
+min-height:100vh;
+}
+
+section{
+padding:100px 10%;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+position:relative;
+overflow:hidden;
+}
+
+.glow{
+position:absolute;
+width:600px;
+height:600px;
+background:#ff4fa355;
+filter:blur(140px);
+border-radius:50%;
+top:20%;
+left:50%;
+transform:translateX(-50%);
+z-index:1;
+}
+
+.hero-content{
+max-width:900px;
+z-index:2;
+}
+
+.hero h4{
+color:var(--pink);
+letter-spacing:4px;
+margin-bottom:20px;
+font-weight:300;
+}
+
+.hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:82px;
+line-height:1.05;
+margin-bottom:20px;
+}
+
+.hero span{
+color:var(--pink);
+}
+
+.hero p{
+opacity:.85;
+font-size:18px;
+max-width:650px;
+margin:auto;
+line-height:1.6;
+}
+
+.btn{
+margin-top:40px;
+padding:16px 40px;
+border:none;
+border-radius:50px;
+background:linear-gradient(45deg,#ff5fa2,#ff9bc7);
+color:white;
+font-size:17px;
+cursor:pointer;
+transition:.4s;
+font-weight:500;
+}
+
+.btn:hover{
+transform:translateY(-5px);
+box-shadow:0 10px 25px rgba(255,95,162,0.4);
+}
+
+.card{
+background:var(--card);
+backdrop-filter:blur(18px);
+padding:50px;
+border-radius:30px;
+max-width:900px;
+margin:auto;
+border:1px solid rgba(255,255,255,.1);
+}
+
+.card h2{
+font-family:'Cormorant Garamond',serif;
+font-size:52px;
+margin-bottom:25px;
+color:var(--gold);
+text-align:center;
+}
+
+.card p{
+line-height:2;
+opacity:.92;
+font-size:17px;
+}
+
+.spotify-player{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#ffffff10;
+backdrop-filter:blur(15px);
+padding:12px;
+border-radius:20px;
+z-index:999;
+box-shadow:0 8px 25px rgba(0,0,0,0.3);
+width: 280px;
+}
+
+.gallery h2{
+text-align:center;
+font-family:'Cormorant Garamond',serif;
+font-size:55px;
+margin-bottom:50px;
+color:var(--gold);
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.grid img{
+width:100%;
+height:360px;
+object-fit:cover;
+border-radius:20px;
+transition:.5s;
+box-shadow:0 8px 20px rgba(0,0,0,0.4);
+}
+
+.grid img:hover{
+transform:scale(1.06);
+}
+
+.timeline{
+max-width:1000px;
+margin:auto;
+}
+
+.timeline-item{
+background:var(--card);
+padding:35px;
+border-radius:20px;
+margin-bottom:25px;
+border-left:5px solid var(--pink);
+}
+
+.timeline-item h3{
+color:var(--pink);
+margin-bottom:12px;
+font-size:22px;
+}
+
+.footer{
+text-align:center;
+padding:120px 20px 80px;
+}
+
+.footer h2{
+font-family:'Cormorant Garamond',serif;
+font-size:62px;
+margin-bottom:20px;
+color:var(--gold);
+}
+
+.petal{
+position:fixed;
+top:-30px;
+pointer-events:none;
+animation:fall linear forwards;
+z-index:1;
+font-size:28px;
+}
+
+@keyframes fall{
+0%{ transform:translateY(-10vh) rotate(0deg); opacity:1; }
+100%{ transform:translateY(120vh) rotate(360deg); opacity:0; }
+}
+
+.reveal{
+opacity:0;
+transform:translateY(60px);
+transition:1s;
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+
+@media(max-width:768px){
+.hero h1{font-size:50px;}
+.card{padding:30px;}
+.spotify-player{width: 260px; right:15px; bottom:15px;}
+}
+</style>
+</head>
+<body>
+
+<div class="glow"></div>
+
+<section class="hero">
+<div class="hero-content">
+<h4>A BIRTHDAY SERENADE IN BLOOM</h4>
+<h1>Happy Birthday,<br><span>My Everything ❤️</span></h1>
+<p>Hari ini dunia menjadi lebih indah karena seseorang yang sangat spesial lahir.<br>
+Terima kasih sudah pernah singgah dalam hidupku dan membuat hari terasa lebih berarti.</p>
+<button class="btn" onclick="document.getElementById('letter').scrollIntoView()">
+Discover Your Birthday Surprise
+</button>
+</div>
+</section>
+
+<section id="letter" class="reveal">
+<div class="card">
+<h2>HII, it's your birthday today, right?'</h2>
+<p>Selamat ulang tahun sayangku.<br><br>
+happy birthday semoga kebahagiaan always datang ke kamu yaaa, walaupun kita uda gabisa sama sama lagi seengganya aku pernah menjadi salah satu bagian dari hidup kamu,
+aku engaa bakal lupa sama hari spesial kmuu.. semua tentang kamu masi tertata rapih di sini, aku senang bisa ngeliat kamu uda baik baik aja tanpa adanya aku lagi di hidup kamu..
+bahkan aku ngerasa malu klo aku selalu bilang kalo sampai saat ini pun i still love u, tapi setelah ini aku bakalan pastiin kalo aku harus bisa baik baik aja kan? kehidupan akan terus berjalan, 
+ga semestinya aku cuma stuck di kamu terus, doain aku semoga bisa baik baik aja tanpa kamu ya? walaupun kenyataannya still can't. setelah ini aku bakal sebisaku melupakanmu. be happy ya, loved you.
+SEKALI LAGI HAPPY BIRTHDAY YYAAA  NINDII🤍🫰🏽🤍🫰🏽</p>
+</div>
+</section>
+
+<section class="gallery reveal">
+<h2>Our Beautiful Memories</h2>
+<div class="grid">
+<img src="foto1.png" alt="Memory 1">
+<img src="foto2.png" alt="Memory 2">
+<img src="foto3.png" alt="Memory 3"> 
+<img src="foto4.png" alt="Memory 4">
+</div>
+</section>
+
+<section class="timeline reveal">
+<div class="timeline-item">
+<h3>Pertama Kali Bertemu</h3>
+<p>Hari dimana cerita kita dimulai.</p>
+</div>
+<div class="timeline-item">
+<h3>Mulai Dekat</h3>
+<p>Hari-hari penuh tawa yang tidak pernah terlupakan.</p>
+</div>
+<div class="timeline-item">
+<h3>Hari Ini</h3>
+<p>Merayakan ulang tahun orang paling spesial di hidupku.</p>
+</div>
+</section>
+
+<section class="footer reveal">
+<h2>I Love You ❤️</h2>
+<p>Happy Birthday, My Love.<br>
+May your life be filled with happiness, success, and endless love. I miss you</p>
+</section>
+
+<!-- Spotify Player -->
+<div class="spotify-player">
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/37R0bQOQj5a7DOqh1TGzvB?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+</div>
+
+<script>
+function createPetal(){
+const petal = document.createElement("div");
+petal.classList.add("petal");
+petal.innerHTML = "🌸";
+petal.style.left = Math.random() * 100 + "vw";
+petal.style.fontSize = (18 + Math.random() * 22) + "px";
+petal.style.animationDuration = (6 + Math.random() * 9) + "s";
+document.body.appendChild(petal);
+
+setTimeout(() => petal.remove(), 15000);
+}
+
+setInterval(createPetal, 280);
+
+const reveals = document.querySelectorAll(".reveal");
+function revealOnScroll(){
+reveals.forEach(item => {
+if(item.getBoundingClientRect().top < window.innerHeight - 100){
+item.classList.add("active");
+}
+});
+}
+window.addEventListener("scroll", revealOnScroll);
+revealOnScroll();
+</script>
+
+</body>
+</html>
